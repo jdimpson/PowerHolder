@@ -1,0 +1,11 @@
+Another variation of the AdaFruit PowerBoost 1000C adapted for Raspberry Pi Zero. This time, with a side card that holds an entire 18650 Lithium Ion cell. As with PowerBoard, adds a programmable tactile button and LED. Patches the Low Battery (LBO) signal to the Pi via a level shifter.<br/>
+More significantly, this board lets you pick-and-place and reflow your own electronic components, or you can just go out and buy a PowerBoost 1000C. You still have to solder on a diode, the battery holder clips, and (if you want them), the signal LED, programmable button, enable switch, and the level shifting mosfet for the LBO signal. But most of the fiddly parts, notable the U1 and U2 controller chips, you can just use from the standard AdaFruit product. Just solder it into place with the male headers they provide, or get some female headers too (that option makes clearance problems).<br/>
+
+Changes
+<ul>
+<li>v1.01: Changed MicroUSB connector to one I can find on Digikey; move battery terminals further from RPi header; used thinner/narrower battery holder; add more plus and minus signs (near battery and the USB input header); improve location of component names; added circles around all used pins (squares around GND).
+</ul>
+TODO
+<ul>
+<li>Figure out how to use NTC resistor to monitor battery temperature.
+</ul>
