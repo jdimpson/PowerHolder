@@ -1,3 +1,5 @@
+# PowerHolder PCB
+
 Another variation of the AdaFruit PowerBoost 1000C (https://www.adafruit.com/product/2465) adapted for Raspberry Pi Zero. This is nearly identical to the PowerBoard (https://github.com/jdimpson/PowerBoard), but this time, with a side car that holds an entire 18650 Lithium Ion cell. As with PowerBoard, adds a  schottkey diode and programmable tactile button and LED and patches the Low Battery (LBO) signal to the Pi via a level shifter. 
 
 Also significant, this board lets you choose whether you want to pick-and-place and then eflow your own electronic components, or just go out and buy a PowerBoost 1000C from AdaFruit. You still have to solder on a diode, the battery holder clips, and (if you want them) the signal LED, programmable button, enable switch, and the level shifting mosfet for the LBO signal. But most of the fiddly parts, notably the U1 and U2 controller chips, you can use from the standard AdaFruit product. Just solder the board into place in the matching header holes with the male header pins they provide, or get some female headers too (that option makes clearance problems).
