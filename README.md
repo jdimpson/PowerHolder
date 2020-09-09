@@ -6,7 +6,7 @@ Also significant, this board lets you choose whether you want to pick-and-place 
 
 Other things worthy of note:
 - The MicroUSB connector is not the same foot print as AdaFruit uses in their PowerBoost, because I couldn't figure out which one it was. 
-- Python software that works with the LBO signal, button, and LED will be linked here when they are published.
+- Python software that works with the LBO signal, button, and LED are available in the [RPiIoT](https://github.com/jdimpson/RPiIoT) repo.
 - Auxillary header is provided for USB/5VDC electrical input if you don't want to use MicroUSB.
 - Auxillary header is provided for boosted 5VDC electrical output if you want to power something else with this board (in addition to, or isntead of, an RPi Zero). NOte this auxillary output is not protected by the schottkey diode. This is analogous to the USB output header that the original PowerBoost 1000C provides, although the sense resistors used to indicate availability of > 500 mA have been removed.
 - Unlike most RPi Zero daughter boards (hats, although this does not qualify as a hat because it has no EEPROM and is larger than the starndard board footprint), this board makes more sense to mount _underneath_ the RPi Zero. You'd do this by soldering female headers into the bottom of the RPi Zero, or better yet, the stacking headers like this: https://www.adafruit.com/product/2223. THen put male headers on the PowerHolder, stack the Zero on the PowerHolder, and then put whatever you want on top of the Zero as normal. You can also put the PowerHolder on top of the Zero (with or without stacking header) but the battery placement make the whole thing look weird to me.
