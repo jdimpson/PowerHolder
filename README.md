@@ -17,3 +17,5 @@ Changes
 
 TODO 
 - Since the battery is now onboard, Figure out how to use NTC resistor ("THERM" in the schematic) to monitor battery temperature. This board provides a header to place the NTC, although I haven't experimented with it so have no recommendation for part to use.
+
+![Image of board](./PowerHolder.jpg)
