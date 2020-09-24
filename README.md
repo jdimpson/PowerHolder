@@ -23,7 +23,7 @@ TODO
 
 Raspberry Pi Pins used:
 
-- GPIO17/Phy11 is connected to a momentary / tactile switch. Available for arbitrary software control (typically running my powerboard.py and associated code).
-- GPIO27/Phy13 is connected to a resistor and then an LED. Available for arbitrary software control (e.g. flashing to show grace period, and typically running my powerboard.py and associated code).
+- GPIO17/Phy11 is connected to a momentary / tactile switch. Available for arbitrary software control (typically running my powerboard.py and associated code from the [RPiIoT](https://github.com/jdimpson/RPiIoT) repo).
+- GPIO27/Phy13 is connected to a resistor and then an LED. Available for arbitrary software control (e.g. flashing to show grace period, and typically running my powerboard.py and associated code from the [RPiIoT](https://github.com/jdimpson/RPiIoT) repo).
 - GPIO26/Phy37 is connected to via transistor and appropriate hold up resistor to the LBO signal of the PowerBoost circuit. This is how the Raspberry Pi knows to shut down. The signal is held at battery level (but level shifted to 3.3 V before hitting the RPi) until the Li Ion battery level drops below 3.4VDC (or maybe it's 3.2V, I forget) at which point the LBO signal drops to ground. This tells the software on the RPi to do a graceful shutdown.
 ![Image of board](./PowerHolder.jpg)
